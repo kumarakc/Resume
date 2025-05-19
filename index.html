@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ashesh Kumar - Resume for Senior AI Product Owner</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Calibri, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.4;
+            background: linear-gradient(to bottom, #f5f7fa 0%, #c3cfe2 100%);
+        }
+        .container {
+            max-width: 8.5in;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 30px rgba(0,0,0,0.15);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 30px 40px;
+            position: relative;
+            overflow: hidden;
+        }
+        .header:before {
+            content: "";
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%);
+            transform: rotate(45deg);
+        }
+        h1 {
+            font-size: 32pt;
+            margin: 0;
+            letter-spacing: 2px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+            position: relative;
+            z-index: 1;
+        }
+        .tagline {
+            font-size: 14pt;
+            font-style: italic;
+            margin-top: 8px;
+            opacity: 0.9;
+            position: relative;
+            z-index: 1;
+        }
+        .contact-info {
+            font-size: 11pt;
+            margin: 15px 0 0 0;
+            opacity: 0.9;
+            position: relative;
+            z-index: 1;
+        }
+        .content {
+            padding: 20px 40px 40px 40px;
+        }
+        h2 {
+            font-size: 18pt;
+            margin-top: 30px;
+            margin-bottom: 18px;
+            color: #2a5298;
+            position: relative;
+            padding-bottom: 10px;
+            font-weight: 600;
+        }
+        h2:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(to right, #2a5298 0%, #8e44ad 60%, #e74c3c 100%);
+            border-radius: 2px;
+        }
+        .highlight-section {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 10%, #ffffff 100%);
+            border-left: 6px solid #e74c3c;
+            padding: 20px 25px;
+            margin: 25px 0;
+            border-radius: 0 10px 10px 0;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .ai-focus-box {
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #fecfef 100%);
+            border: 2px solid #e74c3c;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(231,76,60,0.2);
+        }
+        .ai-title {
+            color: #c0392b;
+            font-weight: bold;
+            font-size: 14pt;
+            margin-bottom: 10px;
+        }
+        .experience-card {
+            background: linear-gradient(to right, #ffffff 0%, #f8f9fa 100%);
+            border-left: 5px solid #2a5298;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 0 8px 8px 0;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .experience-card:hover {
+            transform: translateX(5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.12);
+        }
+        .job-title {
+            font-weight: bold;
+            font-size: 15pt;
+            margin-bottom: 5px;
+            color: #2a5298;
+        }
+        .job-details {
+            font-style: italic;
+            margin-bottom: 12px;
+            color: #7f8c8d;
+            font-size: 11pt;
+        }
+        .job-highlights {
+            background: #ecf0f1;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+            border-left: 3px solid #3498db;
+        }
+        ul {
+            margin-top: 10px;
+            margin-bottom: 15px;
+            padding-left: 25px;
+        }
+        li {
+            margin-bottom: 8px;
+            position: relative;
+            list-style-type: none;
+            padding-left: 25px;
+        }
+        li:before {
+            content: "▶";
+            position: absolute;
+            left: 0;
+            color: #e74c3c;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .key-qualifications {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .qualification-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transform: perspective(1000px) rotateX(0deg);
+            transition: transform 0.3s ease-in-out;
+        }
+        .qualification-card:hover {
+            transform: perspective(1000px) rotateX(5deg);
+        }
+        .qualification-title {
+            font-weight: bold;
+            font-size: 13pt;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+        .skill-category {
+            font-weight: bold;
+            color: #2a5298;
+            font-size: 11pt;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .skill-box {
+            background: linear-gradient(to right, #f8f9fa 0%, #e9ecef 100%);
+            border-left: 4px solid #8e44ad;
+            padding: 15px;
+            border-radius: 0 8px 8px 0;
+            transition: transform 0.2s ease-in-out;
+        }
+        .skill-box:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 12px rgba(0,0,0,0.1);
+        }
+        .badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 25px;
+            padding: 6px 14px;
+            margin: 3px;
+            font-size: 10pt;
+            font-weight: 500;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .ai-badge {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a52 100%);
+        }
+        .tags-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .footer {
+            background: linear-gradient(to right, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 20px 40px;
+            text-align: center;
+            font-size: 11pt;
+        }
+        .certification-highlight {
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+            border: 2px solid #e67e22;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 15px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>ASHESH KUMAR</h1>
+            <div class="tagline">Senior AI Product Owner | Digital Transformation Leader</div>
+            <div class="contact-info">
+                Doncaster East, Melbourne, VIC | +61 479 185 719 | asheshcs@gmail.com<br>
+                LinkedIn: linkedin.com/in/ashesh-kumar-86a8a74
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="ai-focus-box">
+                <div class="ai-title">🤖 AI & CONVERSATIONAL TECHNOLOGY SPECIALIST</div>
+                <p><strong>20+ years of digital transformation leadership</strong> with specialized expertise in AI implementation, conversational interfaces, and customer experience optimization. Proven track record of delivering AI-powered solutions that enhance digital self-service capabilities and drive measurable business outcomes in financial services and insurance industries.</p>
+            </div>
+
+            <h2>KEY QUALIFICATIONS FOR SENIOR AI PRODUCT OWNER</h2>
+            <div class="key-qualifications">
+                <div class="qualification-card">
+                    <div class="qualification-title">AI & Automation Expertise</div>
+                    <p>Implemented AI/ML solutions, chatbots, and automation workflows. Post-graduate AI certification from University of Texas at Austin.</p>
+                </div>
+                <div class="qualification-card">
+                    <div class="qualification-title">Insurance Industry Experience</div>
+                    <p>Direct experience with Suncorp and insurance claims systems (AAMI, APIA, GIO, Shannons). Deep understanding of consumer insurance operations.</p>
+                </div>
+                <div class="qualification-card">
+                    <div class="qualification-title">Digital Product Ownership</div>
+                    <p>Led complex digital programs with proven business outcomes. Expert in agile delivery, stakeholder management, and customer experience optimization.</p>
+                </div>
+                <div class="qualification-card">
+                    <div class="qualification-title">Conversational AI Design</div>
+                    <p>Implemented customer-facing chatbots, conversational interfaces, and AI-driven self-service capabilities across multiple platforms.</p>
+                </div>
+            </div>
+
+            <h2>PROFESSIONAL EXPERIENCE - AI & DIGITAL LEADERSHIP</h2>
+            
+            <div class="experience-card">
+                <p class="job-title">SENIOR BUSINESS ANALYST</p>
+                <p class="job-details">Suncorp, Melbourne | January 2024 – Present</p>
+                <div class="job-highlights">
+                    <strong>AI Platform Specialist:</strong> Supporting Databricks and Posit platforms, gaining hands-on experience with cutting-edge AI infrastructure within Suncorp's ecosystem.
+                </div>
+                <ul>
+                    <li>Led development of LLM automation forms and schema management flows for AI platforms</li>
+                    <li>Created comprehensive governance frameworks and observability standards for AI systems</li>
+                    <li>Collaborated with product owners on AI platform process improvements and optimization</li>
+                    <li>Built knowledge management systems for emerging AI technologies and best practices</li>
+                    <li>Facilitated cross-functional collaboration between business and technology teams for AI initiatives</li>
+                </ul>
+            </div>
+
+            <div class="experience-card">
+                <p class="job-title">SENIOR PROJECT MANAGER</p>
+                <p class="job-details">Forever New, Melbourne | January 2023 – January 2024</p>
+                <div class="job-highlights">
+                    <strong>Digital Customer Experience Leader:</strong> Delivered AI-enhanced customer engagement solutions with measurable business impact.
+                </div>
+                <ul>
+                    <li>Implemented CDP & Marketing automation solution achieving 10% uplift in customer engagement</li>
+                    <li>Led integration of conversational technologies across mobile and web channels</li>
+                    <li>Managed delivery teams using advanced agile practices and stakeholder alignment</li>
+                    <li>Established governance frameworks for digital product delivery and change management</li>
+                    <li>Created customer journey optimization strategies using data-driven insights</li>
+                </ul>
+            </div>
+
+            <div class="experience-card">
+                <p class="job-title">CONSULTANT BUSINESS ANALYST</p>
+                <p class="job-details">Business Analysis Pvt Ltd (Suncorp & Melbourne Polytechnic) | May 2022 – January 2023</p>
+                <div class="job-highlights">
+                    <strong>Insurance Digital Solutions:</strong> Designed AI-enhanced self-service experiences for Suncorp's insurance brands.
+                </div>
+                <ul>
+                    <li>Mapped digital self-service journeys for insurance claims across AAMI, APIA, GIO, and Shannons</li>
+                    <li>Designed conversational AI opportunities for Motor & Home insurance customer experiences</li>
+                    <li>Created business cases for AI-driven digital transformation initiatives with ROI analysis</li>
+                    <li>Applied design thinking to develop innovative customer self-service solutions</li>
+                    <li>Built stakeholder alignment across insurance functions and technology teams</li>
+                </ul>
+            </div>
+
+            <div class="experience-card">
+                <p class="job-title">SENIOR OMNICHANNEL MANAGER</p>
+                <p class="job-details">Al Khayyat Investments, Dubai | March 2019 – May 2022</p>
+                <div class="job-highlights">
+                    <strong>AI Implementation Pioneer:</strong> Successfully deployed conversational AI and automation solutions across customer touchpoints.
+                </div>
+                <ul>
+                    <li>Implemented customer-facing chatbots with natural language processing for pharmacy services</li>
+                    <li>Delivered AI-powered recommendation engines and personalization features in mobile apps</li>
+                    <li>Created conversational interfaces for prescription management and health consultations</li>
+                    <li>Built automation workflows for order processing and customer service optimization</li>
+                    <li>Integrated AI analytics for customer behavior prediction and personalized experiences</li>
+                    <li>Achieved AED 500K+ app revenue through AI-enhanced customer engagement features</li>
+                </ul>
+            </div>
+
+            <h2>AI & TECHNOLOGY EXPERTISE</h2>
+            <div class="skills-grid">
+                <div class="skill-box">
+                    <p><span class="skill-category">AI & Machine Learning:</span> Practical application of AI models in Azure ML studio & AWS, Generative AI, LLM automation, Databricks platform</p>
+                </div>
+                <div class="skill-box">
+                    <p><span class="skill-category">Conversational AI:</span> Chatbot design & implementation, Natural language processing, Customer self-service optimization</p>
+                </div>
+                <div class="skill-box">
+                    <p><span class="skill-category">Product Management:</span> Advanced Agile maturity, Backlog prioritization, Customer journey optimization, Performance analytics</p>
+                </div>
+                <div class="skill-box">
+                    <p><span class="skill-category">Digital Analytics:</span> Customer insights analysis, Behavioral data interpretation, Performance tracking, A/B testing</p>
+                </div>
+                <div class="skill-box">
+                    <p><span class="skill-category">Collaboration Tools:</span> Expert-level JIRA, Confluence, Advanced project management methodologies</p>
+                </div>
+                <div class="skill-box">
+                    <p><span class="skill-category">Financial Services:</span> Insurance operations, Consumer banking, Claims processing, Regulatory compliance</p>
+                </div>
+            </div>
+
+            <div class="certification-highlight">
+                <h2 style="margin-top: 0;">EDUCATION & AI CERTIFICATIONS</h2>
+                <ul style="margin-top: 5px;">
+                    <li><strong>Post Graduate Program in Artificial Intelligence & Machine Learning</strong> - University of Texas at Austin, 2021</li>
+                    <li><strong>Generative AI Fundamentals</strong> - Databricks Certified</li>
+                    <li><strong>Databricks Certified Data Analyst Associate</strong></li>
+                    <li><strong>Bachelor of Technology, Computer Science & Engineering</strong> - 2004</li>
+                </ul>
+                <p><strong>Professional Certifications:</strong> PMI-ACP®, CBAP®, SAFe® 5 Agilist, Scrum Product Owner</p>
+            </div>
+
+            <h2>KEY CAPABILITIES ALIGNED WITH ROLE REQUIREMENTS</h2>
+            <div class="tags-container">
+                <span class="badge ai-badge">Conversational AI Expertise</span>
+                <span class="badge">5+ Years Digital/eCommerce</span>
+                <span class="badge ai-badge">AI Platform Experience</span>
+                <span class="badge">Insurance Industry Expert</span>
+                <span class="badge ai-badge">Chatbot Implementation</span>
+                <span class="badge">Advanced Agile Maturity</span>
+                <span class="badge ai-badge">Generative AI Awareness</span>
+                <span class="badge">JIRA/Confluence Expert</span>
+                <span class="badge ai-badge">Customer Experience Advocate</span>
+                <span class="badge">Stakeholder Collaboration</span>
+                <span class="badge ai-badge">Innovation & Creativity</span>
+                <span class="badge">Solution-Oriented Approach</span>
+            </div>
+
+            <div class="highlight-section">
+                <p><strong>Why I'm the Ideal Senior AI Product Owner:</strong> With hands-on experience at Suncorp, proven AI implementation success, and deep insurance industry knowledge, I bring the unique combination of technical expertise and business acumen needed to drive conversational AI initiatives. My track record includes delivering measurable outcomes through AI-enhanced customer experiences and building strong collaborative relationships across diverse stakeholder groups.</p>
+            </div>
+
+            <div class="highlight-section">
+                <p><strong>Work Rights:</strong> Australia's Permanent Resident (Global Talent Independent Visa)<br>
+                <strong>Available to work in:</strong> Sydney, Melbourne, or Brisbane locations</p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            Ashesh Kumar | Senior AI Product Owner | Ready to drive Suncorp's AI transformation
+        </div>
+    </div>
+</body>
+</html>
